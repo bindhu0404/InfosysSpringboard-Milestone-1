@@ -1,4 +1,4 @@
-# ReviewSense – Milestone 1  
+# Milestone 1  
 ### Customer Feedback Data Collection & Text Preprocessing
 
 ## Project Overview
