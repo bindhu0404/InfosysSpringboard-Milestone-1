@@ -28,10 +28,10 @@ def main():
         try:
             df = pd.read_csv(file_path_csv)
         except FileNotFoundError:
-            raise ValueError("❌ Neither Excel nor CSV file found.")
+            raise ValueError("Neither Excel nor CSV file found.")
 
     if "feedback" not in df.columns:
-        raise ValueError("❌ 'feedback' column not found in file")
+        raise ValueError(" 'feedback' column not found in file")
 
     df["clean_feedback"] = df["feedback"].apply(clean_text)
     df.to_csv("Milestone1_Cleaned_Feedback.csv", index=False)
@@ -41,3 +41,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
